@@ -316,7 +316,8 @@ header div h1{
 }
 
 section h1 {
-    color: #f7f7f7;
+    color: #000000;
+    background-color: rgb(255, 192, 192);
 }
 
 
