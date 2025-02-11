@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guru Krupa Tour and Travels - Car Rental Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #00a2e2;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 20px 0;
+        }
+        .form-container {
+            background-color: rgb(255, 176, 176);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            margin: 0 auto;
+        }
+        .form-container h2 {
+            text-align: center;
+        }
+        label {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        input[type="text"], input[type="date"], input[type="time"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #000000;
+            border-radius: 5px;
+        }
+        input[type="submit" ] {
+               
+            background-color: #000000;
+            color: rgb(250, 171, 171);
+            border: none;
+        
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Guru Krupa Tour and Travels</h1>
+        <p>Car Rental Service</p>
+    </header>
+
+    <div class="form-container">
+        <h2>Book Your Car</h2>
+        <form action="/submit-rental" method="POST">
+            <label for="pickup-location"></label>
+            <label for="pickup-location">Select pickup-location:</label>
+        
+             <select id="pickup-location" name="pickup-location" required>
+                <option value="Select pickup-location">Select</option>
+             <option value="Banglore,karnataka">Banglore,karnataka</option>
+             <option value="New delhi">New Delhi</option>
+             <option value="Mumbai,maharashtra">Mumbai,Maharashtra</option>
+             <option value="Pune, Maharashtra">Pune, Maharashtra</option>
+             <option value="Hyderabad, Telangana">Hyderabad, Telangana</option>
+             <option value="Ahmedabad, Gujarat">Ahmedabad, Gujarat</option>
+             <option value="Kochi, Kerala">Kochi, Kerala</option>
+             <option value="Chandigarh, Chandigarh">Chandigarh, Chandigarh</option>
+             <option value="Kolkata, West Bengal">Kolkata, West Bengal</option>
+        </select>
+            
+
+            <label for="dropoff-location">Drop-off Location:</label>
+            <label for="dropoff-location">select pickup-location:</label>
+        
+            <select id="dropoff-location" name="dropoff-location" required>
+               <option value="Select dropoff-location">Select </option>
+            <option value="Banglore,karnataka">Banglore,karnataka</option>
+            <option value="New delhi">New delhi</option>
+            <option value="Mumbai,maharashtra">Mumbai,Maharashtra</option>
+            <option value="Pune, Maharashtra">Pune, Maharashtra</option>
+            <option value="Hyderabad, Telangana">Hyderabad, Telangana</option>
+            <option value="Ahmedabad, Gujarat">Ahmedabad, Gujarat</option>
+            <option value="Kochi, Kerala">Kochi, Kerala</option>
+            <option value="Chandigarh, Chandigarh">Chandigarh, Chandigarh</option>
+            <option value="Kolkata, West Bengal">Kolkata, West Bengal</option>
+       </select>
+           
+           
+
+ 
+            <label for="pickup-date">Pick-up Date:</label>
+            <input type="date" id="pickup-date" name="pickup-date" required>
+
+
+            <label for="pickup-time">Pick-up Time:</label>
+            <input type="time" id="pickup-time" name="pickup-time" required>
+
+         
+            <label for="dropoff-date">Drop-off Date:</label>
+            <input type="date" id="dropoff-date" name="dropoff-date" required>
+
+            <label for="dropoff-time">Drop-off Time:</label>
+            <input type="time" id="dropoff-time" name="dropoff-time" required>
+
+            <label for="car-type">Select Car Type:</label>
+            <select id="car-type" name="car-type" required>
+                <option value="Select">Select car</option>
+                <option value="Ertiga">Ertiga</option>
+
+
+                <option value="Suv">SUV</option>
+                <option value="Inova">Toyota inova</option>
+                <option value="Luxury">Luxury</option>
+                <option value="Sedan">Sedan</option>
+            </select>
+
+            <input type="Submit" value="Book Now">
+        </form>
+    </div>
+
+</body>
+</html>
