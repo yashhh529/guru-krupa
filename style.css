@@ -318,3 +318,12 @@ header div h1{
 section h1 {
     color: #f7f7f7;
 }
+
+
+form button{
+
+    background-color: #cccdf8;
+    width: 300px;
+    color: rgb(3, 2, 7);
+    padding: 20px;
+}
